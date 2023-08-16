@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Disaster Preparedness Logo" >
+            <h1>Disaster Management</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#whatnew"><b>Home</b></a></li>
+            <li class="dropdown">
+                <a href="#"><b>Disasters</b></a>
+                <ul class="dropdown-content">
+                    
+                    <li><a href="#natdisaster">Natural&nbspDisasters</a></li>
+                    <br>
+                    <li><a href="#">Health&nbspEmergencies</a></li>
+                    <br>
+                    <li><a href="#emergency">Emergency&nbspContacts</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><b>Supplies</b></a>
+                <ul class="dropdown-content">
+                    <li><a href="#food">Food & Water</a></li>
+                    <br>
+                    <li><a href="#first">First Aid Kit</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><b>Training</b></a>
+                <ul class="dropdown-content">
+                    <li><a href="#training">CPR & First Aid</a></li>
+                    <br>
+                    <li><a href="#drill">Evacuation Drills</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"><b>Resources</b></a>
+                <ul class="dropdown-content">
+                    <li><a href="#government">Government&nbspAgencies</a></li>
+                    <br>
+                    <li><a href="#community">Community&nbspSupport</a></li>
+                </ul>
+            </li>
+            <li><a href="#contactt"><b>Contact&nbspUs</b></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- <div class="alert-box"> -->
+        <div class="news-container">
+            <h1 id="headline">Loading...</h1>
+        </div>
+        <!-- <p class="animated-headline"><b> Alert!</b></p>     -->
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>LATEST NEWS</h>
+            <h2 style="font-weight:700;">Disaster Preparedness  Be Ready for Anything</h2>
+            <div class="container">
+               
+                <br>
+                <img src="img2.jpg" style="max-width:100%;" width="300pxvw" height="300pxvw">
+                <br>
+            </div>
+              
+        </div>
+        <div class="whats-new" id="whatnew">
+            <h2 >What's New</h2> 
+            <ol>
+                <li><a id="new" href="https://www.ready.gov/evacuation" target="_blank">Evacuation Plan</a></li>
+                <br>
+                <li><a id="new" href="#headline" >Upates</a></li>
+                <br>
+                <li><a id="new" href="#government">Contact government agencies</a></li>
+                <br>
+            </ol>
+        </div>
+    </div>
+    <main>
+        <h3 class="bh">WHY TO PREPARE</h3>
+        <section class="image-and-text">
+            <img src="fight.webp" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Precaution is better than cure</h2>
+                <p></p>
+                Disasters, whether natural or man-made, can strike unexpectedly, causing immense harm. Preparedness is essential to mitigate their impact. Planning and practicing responses enhance individuals' and communities' abilities to handle emergencies.
+                <br><br> Adequate supplies, communication strategies, and evacuation plans safeguard lives and property. Disaster preparation fosters resilience, enabling faster recovery and reducing overall damage. It empowers people to remain self-reliant for a certain period, lessening the strain on first responders. 
+                <br><br>By investing time and effort into readiness, we create a safety net that ensures survival, minimizes chaos, and promotes the long-term well-being of everyone affected.
+                </p>
+            </div>
+        </section>   
+    </main>
+       
+
+        
+    <br>
+    
+    <h3 class="bh" id="natdisaster">Natural Disasters</h3>
+    <br>
+    <div class="container"></div>
+    <main>
+        <section class="image-and-text">
+            <img src="cyclone.webp" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Cyclones</h2>
+                
+                <ol>
+                    <li> Secure loose objects.</li>
+                        <li>Have an emergency kit ready.</li>
+                            <li>Evacuate if advised.</li>
+                                <li>Stay informed through official channels.</li>
+                                    <li>Avoid flooded areas and downed power lines.</li>
+                                        <li>Follow local authorities' instructions for safety.</li>
+                                        </ol>
+                </p>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        <section class="image-and-text">
+            <img src="floods.jpeg" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Floods</h2>
+                
+                <ol>
+                    <li>Stay updated on weather alerts.</li>
+                    <li>Avoid walking or driving through floodwater.</li>
+                    <li>Move to higher ground if necessary.</li>
+                    <li>Keep emergency supplies on hand.</li>
+                    <li>Disconnect electrical appliances.</li>
+                    <li>Follow evacuation orders.</li>
+                    <li>Avoid flood-prone areas.</li>
+                    <li>Watch for fast-moving water.</li>
+                </ol>
+                </p>
+            </div>
+        </section>
+        <section class="image-and-text">
+            <img src="drought.jpeg" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Droughts</h2>
+                    <ol>
+                        <li>Conserve water at home and outdoors.</li>
+                        <li>Fix leaks promptly.</li>
+                        <li>Use water-efficient appliances.</li>
+                        <li>Limit outdoor water use during peak times.</li>
+                        <li>Plant drought-resistant vegetation.</li>
+                        <li>Avoid overexerting livestock or crops.</li>
+                        <li>Observe local water restrictions.</li>
+                        <li>Stay informed about drought conditions.</li>
+                    </ol>
+            
+                </p>
+            </div>
+        </section>
+    </main>
+            
+    </div>
+    <h3 class="bh" id="health">Health Emergencies</h3>
+    <section class="image-and-text">
+        <img src="he.jpeg" alt="Your Image" class="img2">
+        <div class="text">
+            <h2>Calm and take a deep breath</h2>
+            <ol>
+                <li>Stay Calm and Collected</li>
+                <li>Dial Emergency Services Immediately</li>
+                <li>Assess the Situation Safely</li>
+                <li>Provide Basic First Aid, if Trained</li>
+                <li>Stay by the Person's Side</li>
+                <li>Communicate Clearly with Responders</li>
+                <li>Keep Essential Medical Information Accessible</li>
+                <li>Maintain a First Aid Kit and Training</li>
+            </ol>
+        
+            </p>
+        </div>
+    </section>
+    <h3 class="bh" id="emergency">Emergency Contacts</h3>
+        <section class="image-and-text">
+            <img src="contact.jpeg" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Contact Details</h2>
+                1) Emergency Helpline Number: The emergency contact number for disaster management in India is<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>112</b>.
+                <br><br>
+                2) National Disaster Management Authority (NDMA): Official website of the National Disaster Management Authority (NDMA) of India is
+                <a href="https://ndma.gov.in/" id="li" target=”_blank”>https://ndma.gov.in/</a><br><br>
+                3) State Disaster Management Authorities: Each state in India has its own State Disaster Management Authority responsible for disaster management and preparedness.
+    </div>
+    </section>
+    </p>
+
+    <h3 class="bh" id="food">Food and Water Supplies</h3>
+        <section class="image-and-text">
+            <img src="food.jpeg" alt="Your Image" class="img2">
+            <div class="text">
+                <h2>Get your supplies handy</h2>
+                1) Government Helplines: Stay tuned to official website of the National Disaster Management Authority (NDMA) or the   relevant state disaster management authorities <b> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Number - 112</b>. <br><br>
+        2) Local Administration: Contact your local authorities for information about distribution centers and assistance.<br><br>
+        3) NGOs and Relief Organizations: Non-governmental organizations (NGOs) and humanitarian organizations often play a crucial role in disaster response and relief.<br><br>&nbsp;&nbsp;&nbsp; Organizations like the Red Cross-<b>  Call us at  011-23359379 , 9319982104  or  9319982105</b>, CARE India - Contact us at - <a href="https://www.careindia.org/contact-us/" id="li" target=”_blank”>https://www.careindia.org/contact-us/</a>, Oxfam India <br><br>&nbsp;<a href="https://www.oxfamindia.org/contactus" id="li" target=”_blank” >https://www.oxfamindia.org/contactus</a>.
+        </p>
+    </div>
+    </section>
+
+    <h3 class="bh" id="first">First Aid Kit Supplies</h3>
+    <p style="font-size: 20px; padding: 30px; ">
+        <main>
+            <section class="image-and-text">
+                <img src="first_aid.jpeg" alt="Your Image" class="img2">
+                <div class="text">
+                    <h2>first aid kit</h2>
+                    <p>MAKE YOUR FIRST AID KIT RIGHT NOW.</p>
+                    <ol>
+                        <li>Adhesive bandages (various sizes)</li>
+                        <li>Sterile gauze pads</li>
+                        <li>Adhesive tape</li>
+                        <li>Antiseptic wipes or solution</li>
+                        <li>Tweezers</li>
+                        <li>Scissors</li>
+                        <li>Disposable gloves</li>
+                        <li>Cotton balls/swabs</li>
+                        <li>Thermometer</li>
+                        <li>Pain relievers (paracetamol/ibuprofen)</li>
+                        <li>Antihistamines (for allergies)</li>
+                        <li>Hydrocortisone cream (for skin irritations)</li>
+                        <li>Oral rehydration salts (ORS)</li>
+                        <li>Sterile eyewash solution</li>
+                        <li>CPR face shield or mask</li>
+                        <li>Elastic bandage (crepe bandage)</li>
+                        <li>Burn ointment or gel</li>
+                        <li>Sting relief pads (for insect bites)</li>
+                        <li>Tweezers (for removing splinters)</li>
+                        <li>Medical adhesive tape</li>
+                        <li>Alcohol-based hand sanitizer</li>
+                        <li>Emergency contact numbers and medical information</li>
+                    </ol>
+                    </p>
+                </div>
+            </section>   
+        </main>
+
+        
+    </p>
+    <h3 class="bh" id="training">Training</h3>
+    <p style="font-size: 20px; padding: 30px; ">
+        <main>
+            <section class="image-and-text">
+                <img src="train.webp" alt="Your Image" class="img2">
+                <div class="text">
+                    <h2 >Training First aid CPR</h2>
+                    <p>TRAIN YOURSELF</p>
+                    <p style="color: black;">First aid CPR training teaches life-saving skills. Learn chest compressions and rescue breaths for cardiac arrest victims. Call for help, start compressions, and give breaths. Push hard and fast on the chest. Training empowers you to respond confidently in emergencies, potentially saving lives.</p>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/TPpiWG_HzkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                    
+                    </p>
+                </div>
+            </section>   
+        </main>
+    </p>
+    <h3 class="bh" id="drill">Training - Evacuation Drill</h3>
+    <h2 style="padding: 20px;">It's time to train yourself</h2>
+        <section class="image-and-text">
+            <figure><img src="earth.jpeg" alt="Your Image" class="img3">
+                <figcaption  style="font-weight: bolder;">Cover your head at time of earthquake</figcaption>
+            </figure>
+
+            <figure><img src="fire.png" alt="Your Image" class="img3"><figcaption style="font-weight: bolder;">Keep your Fire extinguisher ready</figcaption></figure>
+            
+            <figure><img src="fire_dril.jpeg" alt="Your Image" class="img3"><figcaption style="font-weight: bolder;">Form a line and follow instructions</figcaption></figure>
+            
+            <figure><img src="run.jpeg" alt="Your Image" class="img3"><figcaption style="font-weight: bolder;">Help people in need</figcaption></figure>
+            
+            <figure><img src="first_aid.jpeg" alt="Your Image" class="img3"><figcaption style="font-weight: bolder;"> keep your first aid kit ready</figcaption></figure>
+            
+              
+        </p>
+    </div>
+    </section>
+
+    <h2 style="padding: 20px;">Evacuation Drills videos</h2>
+        <section class="image-and-text" style="padding: 10px;">
+            
+            <iframe width="400" height="250"  src="https://www.youtube.com/embed/UuTowptYlrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe> 
+            
+            &nbsp;&nbsp;
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/TuMWWquiqV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+              
+        </p>
+    </div>
+    </section>
+
+    <h3 class="bh" id="government">Resources - Government Agencies</h3>
+    <h2 style="padding: 20px;">It's time to train yourself</h2>
+    <section class="image-and-text">
+        <img src="govt.jpeg" alt="Your Image" class="img2">
+        <div class="text">
+            <h2>Get info about government agencies</h2>
+            <ol>
+                <li>National Disaster Management Authority (NDMA)<b>  Contact us at - <a href ="https://ndma.gov.in/" style="color: black;" target=”_blank” >https://ndma.gov.in/</a></b></li>
+                <br>
+                <li>National Executive Committee (NEC)<b>  Contact us at - <a href ="https://ndmindia.mha.gov.in/functions" style="color: black;" target=”_blank” >https://ndmindia.mha.gov.in/functions</a></b></li>
+                <br>
+                <li>State Disaster Management Authority (SDMA)<b>  Contact us at - <a href ="https://ndma.gov.in/Governance/SDMA" style="color: black;" target=”_blank” >https://ndma.gov.in/Governance/SDMA</a></b></li>
+                <br>
+                <li>District Disaster Management Authority (DDMA)<b>  Contact us at - <a href ="https://ribhoi.gov.in/ddma/" style="color: black;" target=”_blank” >https://ribhoi.gov.in/ddma/</a></b></li>
+                <br>
+                <li>Local Authorities<b>  Contact us at- <a href ="https://www.qld.gov.au/emergency/local-gov/role" style="color: black;" target=”_blank” >https://www.qld.gov.au/emergency/local-gov/role</a></b></li>
+            </ol>
+    </div>
+    </section>
+    </p>
+
+    <h3 class="bh" id="community">Resources - Community Support</h3>
+    <h2 style="padding: 20px;">It's time to train yourself</h2>
+    <section class="image-and-text">
+        <img src="community.jpeg" alt="Your Image" class="img2">
+        <div class="text">
+            <h2>Get info about government agencies</h2>
+            <ol>
+                <li>Volunteer Organizations - Red Cross society and various local NGOs<b>  Contact Red Cross at - <a href ="https://www.indianredcross.org/" style="color: black;">https://www.indianredcross.org/</a></b> </li>
+                <li>National Disaster Response Force (NDRF)</li>
+                <li>State Disaster Response Force (SDRF)</li>
+                <li>Community-Based Disaster Management (CBDM)</li>
+                <li>Community Radio Stations</li>
+                <li>Self-Help Groups (SHGs)</li>
+                <li>Panchayati Raj Institutions</li>
+                <li>Technology and Social Media</li>
+            </ol>
+    </div>
+    </section>
+    </p> 
+    <h3 class="bh" id="contactt">Contact Us</h3>
+    <h2 style="padding: 20px;">You can contact us at</h2>
+    <p style="padding-left: 20px; font-size: 18px;"><b> Email-id:</b> <a href="" style="color: black;"><b>disastermanagement@gmail.com</b></a></p>
+    <p style="padding-left: 20px; font-size: 18px;"><b>Contact Number:- 0123456689</b></p>
+    <p></p>
+    <script src="script.js"></script>
+    </body>
+</body>
+</html>
+
